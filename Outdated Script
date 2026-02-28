@@ -1,1 +1,23 @@
+-- VibeEXE - Outdated Version
 
+local ui = loadstring(game:HttpGet('https://raw.githubusercontent.com/topitbopit/dollarware/main/library.lua'))({
+    rounding = true,
+    theme = 'dark',
+    smoothDragging = true
+})
+
+local window = ui.newWindow({
+    text = "VibeEXE - Outdated",
+    size = Vector2.new(650, 450)
+})
+
+local menu = window:addMenu({ text = 'Notice' })
+local section = menu:addSection({ text = 'Update VibeEXE', side = 'left' })
+
+section:addLabel({ text = "Update VibeEXE" })
+
+ui.notify({
+    title = "VibeEXE",
+    message = "Script is outdated. Please update.",
+    duration = 5
+})
